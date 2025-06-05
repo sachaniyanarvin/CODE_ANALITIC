@@ -1,0 +1,199 @@
+/* Base Layout */
+.login-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e0f2ff, #dcdcff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .login-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Header */
+  .login-header {
+    text-align: center;
+  }
+  
+  .login-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .login-header h2 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    color: #222;
+  }
+  
+  .signup-link {
+    color: #5b5bff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Buttons */
+  .social-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #ccc;
+    padding: 0.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f9f9f9;
+    font-size: 0.9rem;
+  }
+  
+  .google {
+    color: #ea4335;
+  }
+  
+  .github {
+    color: #333;
+  }
+  
+  .social-btn:hover {
+    background: #f0f0f0;
+  }
+  
+  /* Divider */
+  .divider {
+    text-align: center;
+    position: relative;
+    margin: 1.5rem 0;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    width: 45%;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .divider span {
+    background: white;
+    padding: 0 10px;
+    color: #888;
+    font-size: 0.85rem;
+  }
+  
+  /* Form */
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .input-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .input-icon svg {
+    position: absolute;
+    left: 10px;
+    color: #aaa;
+  }
+  
+  .input-icon input {
+    width: 100%;
+    padding: 0.6rem 0.6rem 0.6rem 2.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.95rem;
+  }
+  
+  .input-icon input:focus {
+    border-color: #5b5bff;
+    box-shadow: 0 0 0 1px #5b5bff40;
+  }
+  
+  /* Options */
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .forgot-link {
+    color: #5b5bff;
+    text-decoration: none;
+  }
+  
+  .forgot-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    background: #5b5bff;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #4747dd;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .login-card {
+      padding: 1.5rem;
+    }
+  
+    .login-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .submit-btn {
+      font-size: 0.95rem;
+    }
+  }
+  
